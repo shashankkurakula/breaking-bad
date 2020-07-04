@@ -34,7 +34,7 @@ const CharacterItem = ({ item }) => {
 
             <br />
 
-            <li style={{ color: '#0d0d0d', fontSize: '18px' }}>
+            <li style={{ color: 'black', fontSize: '18px' }}>
               <strong style={{ fontWeight: 'bold' }}>Actor:</strong>{' '}
               {item.portrayed}
             </li>

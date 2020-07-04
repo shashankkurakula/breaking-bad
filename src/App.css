@@ -97,7 +97,7 @@ input[type='text'] {
 .card {
   cursor: pointer;
   background-color: transparent;
-  height: 300px;
+  height: 310px;
   perspective: 1000px;
   /* border-bottom: 1px #fff solid; */
 }
@@ -168,8 +168,6 @@ input[type='text'] {
   .card,
   .card img {
     height: 400px;
-  }
-  .menu {
   }
   .nav-link {
     height: 50px;
