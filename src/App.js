@@ -14,7 +14,7 @@ const App = () => {
       <div className='container'>
         <Header />
         <Navbar />
-        <Route path='/breaking-bad-react' exact component={Characters} />
+        <Route path='/breaking-bad' exact component={Characters} />
         <Route path='/quotes' exact component={Quotes} />
       </div>
     </Router>

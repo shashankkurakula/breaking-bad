@@ -5,7 +5,7 @@ import React from 'react';
 export default function Navbar() {
   return (
     <div className='menu'>
-      <Link to='/breaking-bad-react' className='nav-link'>
+      <Link to='/breaking-bad' className='nav-link'>
         Characters
       </Link>
       <Link to='/quotes' className='nav-link'>
