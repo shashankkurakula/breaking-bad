@@ -2,7 +2,7 @@
   "name": "breaking-bad-brad-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shashankkurakula.github.io/breaking-bad-react",
+  "homepage": "https://shashankkurakula.github.io/breaking-bad",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
