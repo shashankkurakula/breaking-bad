@@ -11,7 +11,6 @@ const CharacterItem = ({ item }) => {
         </div>
         <div className='card-back'>
           <h1 style={{ bottom: 0 }}>{item.name}</h1>
-          {/* <hr style={{ top: 0, bottom: 0 }} /> */}
           <ul>
             <li>
               <strong>occupation:</strong> {item.occupation.toString()}
@@ -26,7 +25,6 @@ const CharacterItem = ({ item }) => {
             {appearedInBetterCallSaul.length > 0 ? (
               <li>
                 <strong>Also Starred in Better Call Saul</strong>
-                {/* {item.better_call_saul_appearance.toString()} */}
               </li>
             ) : (
               ' '

@@ -1,24 +1,31 @@
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-// import axios from 'axios';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import './App.css';
-import Header from './components/ui/Header';
-import Navbar from './components/ui/Navbar';
-import Characters from './components/characters/Characters';
-import Quotes from './components/quotes/Quotes';
+import "./App.css";
+import Header from "./components/ui/Header";
+import Navbar from "./components/ui/Navbar";
+import Characters from "./components/characters/Characters";
+import Quotes from "./components/quotes/Quotes";
 
-const App = () => {
+function App() {
+  const breaking_bad_api = "https://cyan-gentle-adder.cyclic.app/breaking-bad";
+
   return (
-    <Router>
-      <div className='container'>
-        <Header />
+    <div>
+      <Header />
+      <Router>
         <Navbar />
-        <Route path='/breaking-bad' exact component={Characters} />
-        <Route path='/quotes' exact component={Quotes} />
-      </div>
-    </Router>
+        <Routes>
+          <Route path="/" element={<Characters api={breaking_bad_api} />} />
+          <Route
+            path="/breaking-bad"
+            element={<Characters api={breaking_bad_api} />}
+          />
+          <Route path="/quotes" element={<Quotes api={breaking_bad_api} />} />
+        </Routes>
+      </Router>
+    </div>
   );
-};
+}
 
 export default App;

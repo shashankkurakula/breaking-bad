@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import QuotesGrid from './QuotesGrid';
 
-const Quotes = () => {
+const Quotes = ({api}) => {
   const [characters, setCharacters] = useState([]);
   const [quotes, setQuotes] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -11,21 +11,21 @@ const Quotes = () => {
   useEffect(() => {
     const fetchQuotes = async () => {
       const result = await axios.get(
-        `https://breakingbadapi.com/api/quotes?series=Breaking+Bad`
+        `${api}/quotes`
       );
       setQuotes(result.data);
       setIsLoading(false);
     };
     const fetchCharacters = async () => {
       const result = await axios.get(
-        `https://www.breakingbadapi.com/api/characters`
+        `${api}/characters`
       );
       setCharacters(result.data);
       setIsLoading(false);
     };
     fetchQuotes();
     fetchCharacters();
-  }, []);
+  }, [api]);
 
   return (
     <div className='container'>

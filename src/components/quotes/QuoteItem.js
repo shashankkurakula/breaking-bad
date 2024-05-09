@@ -33,7 +33,6 @@ const QuoteItem = ({ item, characters }) => {
           className='card-front'
           style={{
             backgroundColor: '#333333',
-            // borderRadius: '5%',
             padding: '20px',
           }}
         >
@@ -45,7 +44,6 @@ const QuoteItem = ({ item, characters }) => {
           >
             {quote}
           </p>
-          {/* <br /> */}
           <p
             style={{
               position: 'absolute',
